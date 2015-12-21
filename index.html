@@ -10,7 +10,7 @@
   <meta name="author" content="">
   <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
 
-  <title>Awesome Album - Chris Hall</title>
+  <title>Mystery Album - Chris Hall</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
     }
     #player {
     position: fixed;
-    bottom: 0;
+    bottom: 30%;
     width: 100%;
     }
     audio { 
@@ -60,8 +60,8 @@
 <body style="background-image:url(img/background-image.jpg)">
   <div id="main-content">
 
-    <h1 style="font-size: 50px; color: white; font-family: 'Maven Pro', 'helvetica', sans-serif; ">Awesome Album</h1>
-    <p style="font-size: 25px; color: black; font-family: 'Dancing Script', 'Lucida Calligraphy', serif;">Chris Hall</p>
+    <h1 style="font-size: 50px; color: white; font-family: 'Courier New', Courier, monospace; ">Mystery Album</h1>
+    <p style="font-size: 25px; color: white; font-family: 'Lucida Console', Monaco, monospace;">Chris Hall</p>
 
     <ul class="list-inline">
       <li>
@@ -78,10 +78,10 @@
 
 
   <div id="player">
-    <audio controls autoplay preload="auto">
+    <audio controls preload="auto"> <!-- add "autoplay" after "controls" -->
       <source src="audio/album.mp3" type="audio/mpeg">
-<!--       <source src="audio/1-02-Circuital.ogg" type="audio/ogg">
- -->      <p>Your browser does not support the audio element.</p>
+      <source src="audio/album.ogg" type="audio/ogg">
+      <p>Your browser does not support the audio element.</p>
     </audio>
 
   </div>
