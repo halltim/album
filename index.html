@@ -33,15 +33,15 @@
       height: 100px;
       left: 0;
       margin: auto;
-      position: absolute;
+      position: fixed;
       top: 0;
       right: 0;
       width: 500px;
       text-align: center;
     }
     #player {
-    position: fixed;
-    bottom: 30%;
+    /*position: fixed;
+    bottom: 30%;*/
     width: 100%;
     }
     audio { 
@@ -62,8 +62,20 @@
 
     <h1 style="font-size: 50px; color: white; font-family: 'Courier New', Courier, monospace; ">Mystery Album</h1>
     <p style="font-size: 25px; color: white; font-family: 'Lucida Console', Monaco, monospace;">Chris Hall</p>
-
-    <ul class="list-inline">
+    <div style="font-size: 10px; color: white; font-family: 'Lucida Console', Monaco, monospace;"> 
+      <p>00:00 - Look Forward</p>
+      <p>03:18 - Feelin Alright</p>
+      <p>06:19 - Look Forward</p>
+      <p>11:01 - Look Forward</p>
+    </div>
+    <audio controls preload="auto"> <!-- add "autoplay" after "controls" -->
+      <source src="audio/album.mp3" type="audio/mpeg">
+      <source src="audio/album.ogg" type="audio/ogg">
+      <p>Your browser does not support the audio element.</p>
+    </audio>
+    <!-- Track Names -->
+    
+    <!-- <ul class="list-inline">
       <li>
           <a href="#" class="btn btn-default btn-sm"><i class="fa fa-shopping-cart fa-fw"></i> <span class="network-name">Buy</span></a>
       </li>
@@ -73,18 +85,18 @@
       <li>
           <a href="https://open.spotify.com/artist/43O3c6wewpzPKwVaGEEtBM" class="btn btn-default btn-sm" target="_blank"><i class="fa fa-spotify fa-fw"></i> <span class="network-name">Spotify</span></a>
       </li>
-    </ul>
+    </ul> -->
   </div>
 
 
-  <div id="player">
-    <audio controls preload="auto"> <!-- add "autoplay" after "controls" -->
+  <!-- <div id="player">
+    <audio controls preload="auto"> <!- - add "autoplay" after "controls" - ->
       <source src="audio/album.mp3" type="audio/mpeg">
       <source src="audio/album.ogg" type="audio/ogg">
       <p>Your browser does not support the audio element.</p>
     </audio>
 
-  </div>
+  </div> -->
 
 
   <!-- jQuery -->
